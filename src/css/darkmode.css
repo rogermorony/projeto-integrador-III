@@ -1,0 +1,325 @@
+/* ===== TEMA ===== */
+
+body {
+  background-image: url("../assets/dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f5f5f5;
+}
+
+.light body {
+  background-image: url("../assets/light.jpg");
+  color: #222;
+}
+
+/* ===== SIDEBAR E TEXTOS GERAIS ===== */
+.sidebar,
+.filters li a,
+.contact a,
+.about p,
+.about h4,
+.contact h3,
+.group-title {
+  color: #f5f5f5;
+}
+
+.filters li a:hover,
+.contact a:hover {
+  color: #7ee787;
+}
+
+.contact ion-icon {
+  color: #ffffff;
+}
+
+.filter-group,
+.contact,
+.about {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.light .sidebar,
+.light .filters li a,
+.light .contact a,
+.light .about p,
+.light .about h4,
+.light .contact h3,
+.light .group-title {
+  color: #222;
+}
+
+.light .filters li a:hover,
+.light .contact a:hover {
+  color: var(--green);
+}
+
+.light .contact ion-icon {
+  color: #373737;
+}
+
+.light .filter-group,
+.light .contact,
+.light .about {
+  border-top: 1px solid var(--border);
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+.btn-voltar {
+  color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-voltar:hover {
+  color: #7ee787;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.btn-voltar ion-icon {
+  color: inherit;
+}
+
+.light .btn-voltar {
+  color: #222;
+  background: #f5f5f5;
+  border: 1px solid #e2e2e2;
+}
+
+.light .btn-voltar:hover {
+  color: #1f66c0;
+  background: #e9e9e9;
+}
+
+/* ===== PÁGINA DOS PRODUTOS ===== */
+.detail-category,
+.detail-title,
+.detail-sku,
+.detail-price,
+.detail-unit,
+.detail-desc,
+.detail-subtitle,
+.see-more,
+.see-more-icon,
+.action,
+.action-icon,
+.action-text {
+  color: #ffffff !important;
+}
+
+.light .detail-category {
+  color: var(--text-muted) !important;
+}
+
+.light .detail-title,
+.light .detail-price {
+  color: #111 !important;
+}
+
+.light .detail-sku,
+.light .detail-unit,
+.light .detail-desc {
+  color: var(--text-light) !important;
+}
+
+.light .detail-subtitle,
+.light .see-more,
+.light .see-more-icon,
+.light .action,
+.light .action-icon,
+.light .action-text {
+  color: var(--text-muted) !important;
+}
+
+/* ===== CARD DOS PRODUTOS ===== */
+.card .title {
+  color: #000;
+}
+
+.card .subtitle {
+  color: #555;
+}
+
+.card .price {
+  color: #000;
+  font-weight: 700;
+}
+
+/* ===== FORMULÁRIO DE CONTATO ===== */
+.contato-card {
+  background: #1f1f1f;
+  color: #ffffff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+.contato-card-titulo,
+.contato-label {
+  color: #ffffff;
+}
+
+.contato-card-subtitulo {
+  color: #d0d0d0;
+}
+
+.light .contato-card {
+  background: #ffffff;
+  color: #222;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.light .contato-card-titulo,
+.light .contato-label {
+  color: #111;
+}
+
+.light .contato-card-subtitulo {
+  color: #666;
+}
+
+.input,
+textarea {
+  background: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #4a4a4a;
+}
+
+.input::placeholder,
+textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.light .input,
+.light textarea {
+  background: #ffffff;
+  color: #222;
+  border: 1px solid #dcdcdc;
+}
+
+.light .input::placeholder,
+.light textarea::placeholder {
+  color: #888;
+}
+
+.contato-erro {
+  color: #ff8c8c;
+}
+
+.light .contato-erro {
+  color: red;
+}
+
+/* ===== BOTÃO DE AÇÃO ===== */
+.detail-btn {
+  background: #2e8b57;
+  border-color: #2e8b57;
+  color: #ffffff;
+}
+
+.detail-btn:hover {
+  background: #3ea56a;
+}
+
+.light .detail-btn {
+  background: var(--green);
+  border-color: var(--green-hover);
+  color: #ffffff;
+}
+
+.light .detail-btn:hover {
+  background: var(--green-hover);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #101a10;
+}
+
+.footer-column ul li,
+.footer-tagline,
+.disclaimer-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.light .site-footer {
+  background-color: #1b2e1b;
+}
+
+/* ===== SWITCH DO TEMA ===== */
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 20px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white url("../assets/moon-stars.svg") no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+  background: white url("../assets/sun.svg") no-repeat center;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+.light #switch span {
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* ===== BOTÃO DE AÇÃO DO DARK MODE ===== */
+.action {
+  color: #ffffff;
+}
+
+.action-icon {
+  color: #ffffff;
+}
+
+.action:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.action:hover .action-text,
+.action:hover .action-icon {
+  color: #7ee787;
+}
+
+/* ===== BOTÃO DE AÇÃO DO LIGHT MODE ===== */
+.light .action {
+  color: #222;
+}
+
+.light .action-icon {
+  color: #222;
+}
+
+.light .action:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light .action:hover .action-text,
+.light .action:hover .action-icon {
+  color: var(--green);
+}

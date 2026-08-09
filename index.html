@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grama São Carlos | Serra Verde Gramas - loja virtual</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Signika:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/globals.css">
+  <link rel="stylesheet" href="src/css/darkmode.css">
+  <link rel="stylesheet" href="src/css/responsividade.css">
+
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- MENU LATERAL ESQUERDO -->
+    <aside class="sidebar">
+      <div class="brand">
+        <a href="index.html">
+          <img src="src/assets/logo-serra-verde.png" alt="Logo Serra Verde Gramas">
+        </a>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <!-- filtros -->
+      <nav class="filters">
+
+        <div class="filter-group">
+          <div class="group-title">GRAMA</div>
+          <ul>
+            <li><a href="detalhes-esmeralda.html">Zoysia Japônica</a></li>
+            <li><a href="detalhes-saocarlos.html">Axonopus Fissifolius</a></li>
+            <li><a href="detalhes-zeon.html">Zoysia Matrella</a></li>
+            <li><a href="detalhes-sementes.html">Sementes de Grama</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="group-title">TERRA E ADUBO</div>
+          <ul>
+            <li><a href="detalhes-terra.html">Terra Preta</a></li>
+            <li><a href="detalhes-terraemsaco.html">Terra Preta em Saco</a></li>
+            <li><a href="detalhes-fertilizante.html">Fertilizante NPK</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="group-title">ACESSÓRIOS</div>
+          <ul>
+            <li><a href="detalhes-irrigacao.html">Kit Irrigação</a></li>
+            <li><a href="detalhes-ferramentas.html">Kit Ferramentas de Jardinagem</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- contatos -->
+      <section class="contact">
+        <h3>Fale Conosco</h3>
+        <ul>
+          <li>
+            <a href="https://wa.me/5554991000910" target="_blank">
+              <ion-icon name="logo-whatsapp"></ion-icon>(54) 99100-0910
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/serraverdegramas" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>@serraverdegramas
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/serraverdegramas" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>@serraverdegramas
+            </a>
+          </li>
+          <li>
+            <a href="mailto:serraverdegramas@hotmail.com">
+              <ion-icon name="mail-outline"></ion-icon>serraverdegramas@hotmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.google.com/?q=Estr. do Poço da Faca, 95 - São Francisco de Paula - RS"
+              target="_blank">
+              <ion-icon name="map-outline"></ion-icon>São Francisco de Paula - RS
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- sobre -->
+      <section class="about">
+        <h4>Sobre nós</h4>
+        <p>
+          A Serra Verde é o seu parceiro ideal para jardins incríveis, com gramados de alta qualidade e entrega rápida
+          em Canela, Gramado e São Francisco de Paula. Selecione os produtos e transforme seu espaço com a gente!
+          <br>
+        </p>
+      </section>
+    </aside>
+
+    <main>  
+      <!-- BARRA DE BUSCA -->
+      <div class="topbar">
+        <div class="search">
+          <input type="search" placeholder="Buscar produtos...">
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <!-- BOTÕES TOPBAR -->
+        <div class="topbar-btns">
+          <a href="carrinho.html" class="cart-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+            VER O CARRINHO
+          </a>
+          <a href="contato.html" class="cart-btn contato-btn">
+            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            FALE CONOSCO
+          </a>
+        </div>
+      </div>
+
+      <!-- HERO PRINCIPAL -->
+      <a href="detalhes-saocarlos.html" class="hero">
+        <div class="hero-inner">
+          <h2 class="hero-title">A grama mais vendida da Serra Gaúcha</h2>
+          <p class="hero-subtitle">Seu jardim merece o melhor, clique no banner e veja</p>
+        </div>
+      </a>
+
+      <!-- GRID DOS PRODUTOS -->
+      <section class="grid">
+        <article class="card">
+          <div class="thumb">
+
+            <!-- grama esmeralda -->
+            <a href="detalhes-esmeralda.html">
+              <img src="src/assets/esmeralda.png" alt="Grama Esmeralda">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">GRAMA ESMERALDA</h5>
+            <p class="subtitle">Alta resistência a pisoteios</p>
+            <p class="price">R$ 17,00</p>
+            <a href="detalhes-esmeralda.html" class="btn-vermais">
+              
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- grama são carlos -->
+            <a href="detalhes-saocarlos.html">
+              <img src="src/assets/sao carlos.jpg" alt="Grama São Carlos">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">GRAMA SÃO CARLOS</h5>
+            <p class="subtitle">Boa para meia-sombra</p>
+            <p class="price">R$ 16,00</p>
+
+            <a href="detalhes-saocarlos.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- grama zeon -->
+            <a href="detalhes-zeon.html">
+              <img src="src/assets/zeon.png" alt="Grama Zeon">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">GRAMA ZEON</h5>
+            <p class="subtitle">Ideal para jardins premium</p>
+            <p class="price">R$ 18,00</p>
+
+            <a href="detalhes-zeon.html" class="btn-vermais">            
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- terra preta -->
+            <a href="detalhes-terra.html">
+              <img src="src/assets/terra preta.jpg" alt="Terra Preta">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">TERRA PRETA</h5>
+            <p class="subtitle">Ideal para plantio de gramados</p>
+            <p class="price">R$ 120,00</p>
+
+            <a href="detalhes-terra.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- terra preta em saco -->
+            <a href="detalhes-terraemsaco.html">
+              <img src="src/assets/terra preta em saco.jpg" alt="Terra Preta em Saco">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">TERRA PRETA EM SACO</h5>
+            <p class="subtitle">Ideal para coberturas de gramados</p>
+            <p class="price">R$ 30,00</p>
+
+            <a href="detalhes-terraemsaco.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- fertilizante npk -->
+            <a href="detalhes-fertilizante.html">
+              <img src="src/assets/npk.jpg" alt="Fertilizante NPK">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">FERTILIZANTE NPK</h5>
+            <p class="subtitle">Crescimento vigoroso</p>
+            <p class="price">R$ 17,00</p>
+
+            <a href="detalhes-fertilizante.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- sementes de grama -->
+            <a href="detalhes-sementes.html">
+              <img src="src/assets/sementes de grama.webp" alt="Sementes de Grama">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">SEMENTES DE GRAMA</h5>
+            <p class="subtitle">Mix de sementes para falhas</p>
+            <p class="price">R$ 58,00</p>
+
+            <a href="detalhes-sementes.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- kit irrigação -->
+            <a href="detalhes-irrigacao.html">
+              <img src="src/assets/kit irrigacao.jpg" alt="Kit Irrigação">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">KIT IRRIGAÇÃO</h5>
+            <p class="subtitle">Ideal para 50 m²</p>
+            <p class="price">R$ 35,00</p>
+
+            <a href="detalhes-irrigacao.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+
+            <!-- kit ferramentas de jardinagem -->
+            <a href="detalhes-ferramentas.html">
+              <img src="src/assets/kit ferramentas de jardinagem.webp" alt="Kit Ferramentas de Jardinagem">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="title">KIT FERRAMENTAS DE JARDINAGEM</h5>
+            <p class="subtitle">Coberturas e falhas</p>
+            <p class="price">R$ 215,00</p>
+
+            <a href="detalhes-ferramentas.html" class="btn-vermais">
+              Ver mais
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main-layout">
+
+        <!-- COLUNA 1: LOGO + TAGLINE -->
+        <div class="footer-brand">
+          <img src="src/assets/logo-serra-verde2.png" alt="Logo Serra Verde Gramas" class="footer-logo">
+
+          <p class="footer-tagline">Gramados de alta qualidade para a Serra Gaúcha.</p>
+          <div class="footer-social-wrapper">
+            <div class="footer-social-inline">
+              <span>Fale conosco</span>
+              <a href="https://wa.me/5554991000910" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="https://instagram.com/serraverdegramas" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">
+                <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUNAS DE CONTEÚDO -->
+        <div class="footer-content-right">
+          <div class="footer-columns-grid">
+
+            <!-- PROJETO -->
+            <div class="footer-column">
+              <h4>Projeto</h4>
+              <ul>
+                <li>Projeto Integrador II</li>
+                <li>IFSul</li>
+                <li>Polo São Francisco de Paula</li>
+              </ul>
+            </div>
+
+            <!-- EQUIPE -->
+            <div class="footer-column">
+              <h4>Desenvolvido por</h4>
+              <ul>
+                <li>Roger Martins</li>
+                <li>Clério dos Santos</li>
+                <li>João Port</li>
+                <li>Júlia Masiero</li>
+                <li>Matias Prates</li>
+              </ul>
+            </div>
+
+            <!-- PROFESSORES + COPYRIGHT -->
+            <div class="footer-column">
+              <p class="disclaimer-text">
+                Aplicando HTML, CSS e JavaScript no desenvolvimento de uma loja virtual,
+                integrando as disciplinas de Engenharia de Software, Banco de Dados e Desenvolvimento Front-End.
+              </p>
+              <h4>Professores</h4>
+              <ul>
+                <li>Marcia Zechlinski Gusmão</li>
+                <li>Marcelo da Silveira Siedler</li>
+                <li>Michele de Almeida Schmidt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="src/js/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

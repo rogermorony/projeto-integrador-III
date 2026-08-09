@@ -1,0 +1,366 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.btn-voltar ion-icon {
+  font-size: 14px;
+  --ionicon-stroke-width: 40px;
+}
+
+.btn-voltar:hover {
+  color: #1f66c0;
+}
+
+/* ===== LAYOUT GERAL ===== */
+.page {
+  width: 1200px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: sticky;
+  top: 20px;
+  color: #333;
+}
+
+/* Logo */
+.brand {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Filtros */
+.filters h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.count {
+  color: #acacac;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.filter-group {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.group-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters li a {
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin: 6px 0;
+}
+
+.filters li a:hover {
+  color: #3baa5c;
+}
+
+/* Fale Conosco */
+.contact {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.contact h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 8px 0;
+  list-style: none;
+  color: #333;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact a:hover {
+  color: #3baa5c;
+}
+
+.contact ion-icon {
+  font-size: 16px;
+  color: #373737;
+  flex-shrink: 0;
+}
+
+/* Sobre nós */
+.about {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.about h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.about p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+}
+
+/* ===== CAIXAS ===== */
+.box {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.box-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Tabela */
+.table {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 140px 120px;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+.table-head {
+  background: #f7f7f7;
+  border-top: none;
+  font-weight: 700;
+}
+
+.col {
+  font-size: 13px;
+}
+
+.input-qtde {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Formulário */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.input {
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 0 12px;
+  background: #fff;
+  width: 100%;
+}
+
+.row-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Resumo da compra */
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.total {
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.coupon {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.btn {
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 18px;
+  border: 1px solid #3baa5c;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #3baa5c;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #3baa5c;
+  color: #fff;
+  border-color: #3baa5c;
+}
+
+.mini {
+  margin-top: 12px;
+}
+
+.mini-title {
+  color: #666;
+  font-size: 12px;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+/* TABLET (<= 1024px) */
+@media (max-width: 1024px) {
+  .page {
+    width: 100%;
+  }
+}
+
+/* MOBILE (<= 720px) */
+@media (max-width: 720px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .table-row {
+    grid-template-columns: minmax(0, 1fr) 72px 92px 72px;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

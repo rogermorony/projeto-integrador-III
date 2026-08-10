@@ -184,6 +184,13 @@ ion-icon {
   color: var(--text-light);
 }
 
+.search input:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
 .search ion-icon {
   position: absolute;
   right: 10px;

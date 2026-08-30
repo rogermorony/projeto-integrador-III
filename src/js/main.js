@@ -87,7 +87,10 @@ if (formContato) {
     contatoTelefone.classList.remove("input-erro");
     contatoAssunto.classList.remove("input-erro");
     contatoMensagem.classList.remove("input-erro");
+    
     contatoErro.innerText = "";
+    contatoErro.classList.remove("contato-sucesso");
+    contatoErro.classList.add("contato-erro");
 
     if (
       contatoNome.value.trim() === "" ||

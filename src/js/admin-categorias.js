@@ -68,24 +68,25 @@ function renderizarCategorias() {
         <td>${categoria.descricao}</td>
         <td>${situacao}</td>
         <td>
-  <div class="d-flex gap-2">
-    <button
-      type="button"
-      class="btn btn-sm btn-outline-primary"
-      onclick="editarCategoria(${categoria.id})"
-    >
-      Editar
-    </button>
+          <div class="d-flex gap-2">
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary"
+              onclick="editarCategoria(${categoria.id})"
+              aria-label="Editar categoria ${categoria.nome}"
+            >
+              Editar
+            </button>
 
-    <button
-      type="button"
-      class="btn btn-sm btn-outline-danger"
-      onclick="excluirCategoria(${categoria.id})"
-    >
-      Excluir
-    </button>
-  </div>
-</td>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-danger"
+              onclick="excluirCategoria(${categoria.id})"
+              aria-label="Excluir categoria ${categoria.nome}"
+            >
+              Excluir
+            </button>
+          </div>
         </td>
       </tr>
     `;
@@ -124,15 +125,13 @@ function excluirCategoria(idCategoria) {
   if (produtoRelacionado) {
     mostrarMensagemCategoria(
       "Esta categoria possui produtos vinculados e não pode ser excluída.",
-      "warning"
+      "warning",
     );
 
     return;
   }
 
-  const confirmarExclusao = confirm(
-    "Deseja realmente excluir esta categoria?"
-  );
+  const confirmarExclusao = confirm("Deseja realmente excluir esta categoria?");
 
   if (!confirmarExclusao) {
     return;
@@ -145,10 +144,7 @@ function excluirCategoria(idCategoria) {
   });
 
   if (indiceCategoria === -1) {
-    mostrarMensagemCategoria(
-      "Categoria não encontrada.",
-      "danger"
-    );
+    mostrarMensagemCategoria("Categoria não encontrada.", "danger");
 
     return;
   }
@@ -161,10 +157,7 @@ function excluirCategoria(idCategoria) {
     limparFormularioCategoria();
   }
 
-  mostrarMensagemCategoria(
-    "Categoria excluída com sucesso.",
-    "success"
-  );
+  mostrarMensagemCategoria("Categoria excluída com sucesso.", "success");
 
   renderizarCategorias();
 }

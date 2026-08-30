@@ -79,11 +79,6 @@ if (formContato) {
   const contatoMensagem = document.getElementById("contato-mensagem");
   const contatoErro = document.getElementById("contato-erro");
 
-  contatoTelefone.addEventListener("input", function () {
-    let valor = contatoTelefone.value;
-    console.log("Telefone digitado: " + valor);
-  });
-
   formContato.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -133,13 +128,11 @@ if (formContato) {
       return;
     }
 
-    alert("Mensagem enviada! Entraremos em contato em breve.");
+    contatoErro.innerText = "Mensagem enviada! Entraremos em contato em breve.";
+    contatoErro.classList.remove("contato-erro");
+    contatoErro.classList.add("contato-sucesso");
 
-    contatoNome.value = "";
-    contatoEmail.value = "";
-    contatoTelefone.value = "";
-    contatoAssunto.value = "";
-    contatoMensagem.value = "";
+    formContato.reset();
   });
 }
 

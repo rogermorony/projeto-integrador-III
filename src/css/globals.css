@@ -849,6 +849,10 @@ ion-icon {
   min-height: 18px;
 }
 
+.contato-sucesso {
+  color: #28a745;
+}
+
 .contato-submit {
   width: 100%;
   justify-content: center;

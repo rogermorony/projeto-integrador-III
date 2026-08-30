@@ -53,20 +53,22 @@ if (botaoFavoritar) {
   const textoFavoritar = document.getElementById("texto-btn-favoritar");
 
   botaoFavoritar.addEventListener("click", function () {
-    // toggle alterna a classe — se tiver remove, se não tiver adiciona
-    botaoFavoritar.classList.toggle("favoritado");
+  botaoFavoritar.classList.toggle("favoritado");
 
-    if (botaoFavoritar.classList.contains("favoritado")) {
-      iconeFavoritar.setAttribute("name", "heart");
-      textoFavoritar.innerText = "Favoritado";
-      mostrarAvisoCopia("Produto adicionado aos favoritos!");
-    } else {
-      iconeFavoritar.setAttribute("name", "heart-outline");
-      textoFavoritar.innerText = "Favoritar";
-      mostrarAvisoCopia("Produto removido dos favoritos.");
-    }
-  });
-}
+  const estaFavoritado = botaoFavoritar.classList.contains("favoritado");
+
+  botaoFavoritar.setAttribute("aria-pressed", estaFavoritado ? "true" : "false";
+
+  if (estaFavoritado) {
+    iconeFavoritar.setAttribute("name", "heart");
+    textoFavoritar.innerText = "Favoritado";
+    mostrarAvisoCopia("Produto adicionado aos favoritos!");
+  } else {
+    iconeFavoritar.setAttribute("name", "heart-outline");
+    textoFavoritar.innerText = "Favoritar";
+    mostrarAvisoCopia("Produto removido dos favoritos.");
+  }
+});
 
 // FORMULÁRIO DE CONTATO
 const formContato = document.getElementById("form-contato");
@@ -87,7 +89,7 @@ if (formContato) {
     contatoTelefone.classList.remove("input-erro");
     contatoAssunto.classList.remove("input-erro");
     contatoMensagem.classList.remove("input-erro");
-    
+
     contatoErro.innerText = "";
     contatoErro.classList.remove("contato-sucesso");
     contatoErro.classList.add("contato-erro");

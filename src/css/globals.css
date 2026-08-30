@@ -191,6 +191,11 @@ ion-icon {
   background: transparent;
 }
 
+.search:focus-within {
+  outline: 2px solid #198754;
+  outline-offset: 2px;
+}
+
 .search ion-icon {
   position: absolute;
   right: 10px;

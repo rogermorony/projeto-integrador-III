@@ -266,6 +266,11 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+#switch button:focus-visible {
+  outline: 2px solid #7ee787;
+  outline-offset: 3px;
+}
+
 .light #switch button {
   right: 0;
   left: initial;

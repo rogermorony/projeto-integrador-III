@@ -40,9 +40,9 @@
         </a>
       </div>
 
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
+      <div id="switch">
+        <button type="button" onclick="toggleMode()" aria-label="Alternar entre modo claro e escuro"></button>
+        <span aria-hidden="true"></span>
       </div>
 
       <!-- filtros -->
@@ -141,25 +141,31 @@
 
           <form class="contato-form" id="form-contato">
             <div class="contato-campo">
+
               <label class="contato-label" for="contato-nome">Nome completo</label>
               <input class="input" type="text" id="contato-nome" placeholder="Seu nome" required>
 
+              <label class="contato-label" for="contato-email">E-mail</label>
               <input class="input" type="email" id="contato-email" placeholder="seu@email.com" required>
 
+              <label class="contato-label" for="contato-telefone">Telefone</label>
               <input class="input" type="tel" id="contato-telefone" maxlength="15" placeholder="(00) 00000-0000"
                 required>
 
+              <label class="contato-label" for="contato-assunto">Assunto</label>
               <input type="text" class="input" id="contato-assunto"
                 placeholder="Ex: Pedido de orçamento para grama esmeralda" required>
 
+              <label class="contato-label" for="contato-mensagem">Mensagem</label>
               <textarea class="input contato-textarea" id="contato-mensagem" placeholder="Escreva sua mensagem..."
                 required></textarea>
+
             </div>
 
             <p id="contato-erro" class="contato-erro" role="status" aria-live="polite"></p>
 
             <button class="detail-btn contato-submit" id="btn-contato" type="submit">
-              <ion-icon name="send-outline" class="btn-icon"></ion-icon>
+              <ion-icon name="send-outline" class="btn-icon" aria-hidden="true"></ion-icon>
               <span>ENVIAR MENSAGEM</span>
             </button>
           </form>
@@ -204,9 +210,7 @@
             <div class="footer-column">
               <h4>Projeto</h4>
               <ul>
-                <li>
                 <li>Projeto Integrador III</li>
-                </li>
                 <li>IFSul</li>
                 <li>Polo São Francisco de Paula</li>
               </ul>

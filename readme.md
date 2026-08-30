@@ -1,4 +1,4 @@
-<h1 align="center">Serra Verde Gramas | E-commerce (Projeto Integrador II)</h1>
+<h1 align="center">Serra Verde Gramas | E-commerce (Projeto Integrador III)</h1>
 
 <p align="center">
   <a href="https://rogermorony.github.io/projeto-integrador-II/"><b>Visite o site</b></a>
@@ -16,7 +16,7 @@
 
 ---
 
-Este projeto faz parte da disciplina de <b>Projeto Integrador II</b>.  
+Este projeto faz parte da disciplina de <b>Projeto Integrador III</b>.  
 O objetivo é evoluir o front-end de um e-commerce fictício da <b>Serra Verde Gramas</b>, adicionando <b>interatividade com JavaScript</b>, manipulação da DOM e validação de formulários.
 
 ---

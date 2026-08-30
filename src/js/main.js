@@ -53,22 +53,27 @@ if (botaoFavoritar) {
   const textoFavoritar = document.getElementById("texto-btn-favoritar");
 
   botaoFavoritar.addEventListener("click", function () {
-  botaoFavoritar.classList.toggle("favoritado");
+    botaoFavoritar.classList.toggle("favoritado");
 
-  const estaFavoritado = botaoFavoritar.classList.contains("favoritado");
+    const estaFavoritado =
+      botaoFavoritar.classList.contains("favoritado");
 
-  botaoFavoritar.setAttribute("aria-pressed", estaFavoritado ? "true" : "false";
+    botaoFavoritar.setAttribute(
+      "aria-pressed",
+      estaFavoritado ? "true" : "false"
+    );
 
-  if (estaFavoritado) {
-    iconeFavoritar.setAttribute("name", "heart");
-    textoFavoritar.innerText = "Favoritado";
-    mostrarAvisoCopia("Produto adicionado aos favoritos!");
-  } else {
-    iconeFavoritar.setAttribute("name", "heart-outline");
-    textoFavoritar.innerText = "Favoritar";
-    mostrarAvisoCopia("Produto removido dos favoritos.");
-  }
-});
+    if (estaFavoritado) {
+      iconeFavoritar.setAttribute("name", "heart");
+      textoFavoritar.innerText = "Favoritado";
+      mostrarAvisoCopia("Produto adicionado aos favoritos!");
+    } else {
+      iconeFavoritar.setAttribute("name", "heart-outline");
+      textoFavoritar.innerText = "Favoritar";
+      mostrarAvisoCopia("Produto removido dos favoritos.");
+    }
+  });
+}
 
 // FORMULÁRIO DE CONTATO
 const formContato = document.getElementById("form-contato");

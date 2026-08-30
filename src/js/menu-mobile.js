@@ -13,6 +13,19 @@ async function carregarMenuMobile() {
     }
 
     container.innerHTML = await resposta.text();
+
+    const botaoMenu = container.querySelector(".navbar-toggler");
+    const menuMobile = container.querySelector("#menuMobile");
+
+    if (botaoMenu && menuMobile) {
+      menuMobile.addEventListener("shown.bs.collapse", function () {
+        botaoMenu.setAttribute("aria-label", "Fechar menu");
+      });
+
+      menuMobile.addEventListener("hidden.bs.collapse", function () {
+        botaoMenu.setAttribute("aria-label", "Abrir menu");
+      });
+    }
   } catch (erro) {
     console.error(erro);
   }

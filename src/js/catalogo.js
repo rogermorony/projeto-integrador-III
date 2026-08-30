@@ -34,7 +34,7 @@ function criarCardProduto(produto) {
         </div>
 
         <div class="card-body d-flex flex-column flex-grow-1">
-          <h5 class="title">${produto.nome.toUpperCase()}</h5>
+          <h3 class="title">${produto.nome.toUpperCase()}</h3>
 
           <p class="subtitle">
             ${produto.descricao}

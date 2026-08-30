@@ -36,7 +36,7 @@ const produtosIniciais = [
     nome: "Grama São Carlos",
     descricao: "Boa para meia-sombra",
     preco: 16,
-    imagem: "src/assets/sao carlos.jpg",
+    imagem: "src/assets/saocarlos.png",
     destaque: true,
     ativo: true
   },
@@ -66,7 +66,7 @@ const produtosIniciais = [
     nome: "Terra Preta em Saco",
     descricao: "Ideal para cobertura de gramados",
     preco: 30,
-    imagem: "src/assets/terra preta em saco.jpg",
+    imagem: "src/assets/terrapretaemsaco.png",
     destaque: false,
     ativo: true
   },

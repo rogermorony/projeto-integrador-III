@@ -1,24 +1,12 @@
 // PÁGINA DE DETALHES DO PRODUTO
 const botaoCarrinho = document.querySelector(".detail-btn");
 const tituloProduto = document.querySelector(".detail-title");
-const precoProduto = document.querySelector(".detail-price");
 
-if (botaoCarrinho && tituloProduto && precoProduto) {
+if (botaoCarrinho && tituloProduto) {
   botaoCarrinho.addEventListener("click", function () {
     const nomeProduto = tituloProduto.innerText;
-    const preco = precoProduto.innerText;
 
-    console.log("Produto selecionado: " + nomeProduto);
-    console.log("Preço: " + preco);
-
-    alert(nomeProduto + " foi adicionado ao carrinho!");
-
-    botaoCarrinho.classList.add("btn-adicionado");
-
-    const textoBotao = document.querySelector(".btn-text");
-    if (textoBotao) {
-      textoBotao.innerText = "ADICIONADO AO CARRINHO";
-    }
+    mostrarAvisoCopia(nomeProduto + " foi selecionado para o carrinho!");
   });
 }
 
@@ -26,21 +14,35 @@ if (botaoCarrinho && tituloProduto && precoProduto) {
 const botaoCopiar = document.getElementById("btn-copy");
 
 if (botaoCopiar) {
-  botaoCopiar.addEventListener("click", function () {
+  botaoCopiar.addEventListener("click", async function () {
     const linkPagina = window.location.href;
-    alert("Copie o link abaixo:\n" + linkPagina);
+
+    try {
+      await navigator.clipboard.writeText(linkPagina);
+      mostrarAvisoCopia("Link copiado!");
+    } catch (erro) {
+      mostrarAvisoCopia("Não foi possível copiar o link.");
+    }
   });
 }
 
-// BOTÃO COMPARTILHAR NO WHATSAPP
-const botaoCompartilhar = document.getElementById("btn-share");
+function mostrarAvisoCopia(mensagem) {
+  let aviso = document.getElementById("aviso-copia");
 
-if (botaoCompartilhar) {
-  botaoCompartilhar.addEventListener("click", function () {
-    const linkPagina = window.location.href;
-    const urlWhatsApp = "https://wa.me/?text=" + linkPagina;
-    window.open(urlWhatsApp);
-  });
+  if (!aviso) {
+    aviso = document.createElement("div");
+    aviso.id = "aviso-copia";
+    aviso.className = "aviso-copia";
+    aviso.setAttribute("role", "status");
+    document.body.appendChild(aviso);
+  }
+
+  aviso.textContent = mensagem;
+  aviso.classList.add("mostrar");
+
+  setTimeout(function () {
+    aviso.classList.remove("mostrar");
+  }, 2500);
 }
 
 // BOTÃO FAVORITAR PRODUTO
@@ -57,9 +59,11 @@ if (botaoFavoritar) {
     if (botaoFavoritar.classList.contains("favoritado")) {
       iconeFavoritar.setAttribute("name", "heart");
       textoFavoritar.innerText = "Favoritado";
+      mostrarAvisoCopia("Produto adicionado aos favoritos!");
     } else {
       iconeFavoritar.setAttribute("name", "heart-outline");
       textoFavoritar.innerText = "Favoritar";
+      mostrarAvisoCopia("Produto removido dos favoritos.");
     }
   });
 }
